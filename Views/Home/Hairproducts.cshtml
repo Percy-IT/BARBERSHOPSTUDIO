@@ -1,0 +1,60 @@
+﻿ @using BARBERSHOP_STUDIO.Models
+
+@{
+    ViewData["Title"] = "HairProducts";
+}
+
+<style>
+    .box-area {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .single-box {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        transition: 0.6s;
+        height: auto;
+        border-radius: 100px;
+        background-color: blue;
+        color: rgb(6, 248, 248);
+        margin: 20px;
+        padding: 20px;
+        text-align: center;
+        font-size: medium;
+    }
+
+        .single-box:hover {
+            color: rgb(20, 214, 149);
+            background-color: rgb(10, 10, 174);
+        }
+
+
+</style>
+
+
+
+
+
+
+
+<div class="box-area">
+    <div class="single-box">
+
+        <h2>Our Hair Proudcts</h2> 
+        <p>
+            Don't go empty handed when go back home, we also offer a wide range of hair care products that,<br /> will keep you covered until pay us another visit at <strong>Barbershop Studio</strong><br />Click Below:
+            <a href="//localhost:7241" class="btn btn-primary" style="color:black; text-decoration:none; font-size:medium"><strong> Gallery</strong></a>
+
+        </p>
+    </div>
+
+</div>
+

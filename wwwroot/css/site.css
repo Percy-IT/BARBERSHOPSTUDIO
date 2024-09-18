@@ -1,0 +1,145 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px; 
+    
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%; 
+  
+  
+}
+
+body {
+  margin-bottom: 60px; 
+    
+} 
+
+/* Slider container */
+.slider {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Slides container */
+.slides {
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+/* Individual slide */
+.slide {
+    width: 20%;
+    transition: 3s;
+}
+
+    /* Slide images */
+    .slide img {
+        width: 100%;
+        height: 100%; 
+        
+    }
+
+/* Navigation buttons */
+.navigation-manual {
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+    .manual-btn:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    .manual-btn:hover {
+        background: #40D3DC;
+    }
+
+/* Automatic navigation */
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+    .navigation-auto div {
+        border: 2px solid #40D3DC;
+        padding: 5px;
+        border-radius: 10px;
+        transition: 1s;
+    }
+
+        .navigation-auto div:not(:last-child) {
+            margin-right: 40px;
+        }
+
+/* Radio buttons */
+input[type="radio"] {
+    display: none;
+}
+
+/* Slide transitions */
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+
+/* Automatic slide navigation */
+.auto-btn1 {
+    animation: autoSlide 12s infinite;
+}
+
+.auto-btn2 {
+    animation: autoSlide 12s infinite;
+    animation-delay: 4s;
+}
+
+.auto-btn3 {
+    animation: autoSlide 12s infinite;
+    animation-delay: 8s;
+}
+
+@keyframes autoSlide {
+    0%, 20% {
+        background: #40D3DC;
+    }
+
+    25%, 100% {
+        background: transparent;
+    }
+}
+
+
+

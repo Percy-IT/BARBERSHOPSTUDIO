@@ -1,0 +1,80 @@
+﻿
+
+@{
+    ViewData["Title"] = "Home Page";
+} 
+
+
+
+<div class="text-center">
+    <h1 class="display-4">Barbershop Studio</h1>
+    <p>Welcome to the Home of the beautiful fresh haircuts</p>
+</div> 
+
+
+<div class="text-center"> 
+     
+    <a href="/Home/Haircuts" class="btn btn-primary">Haircuts</a>
+    <a href="/Home/HairProducts" class="btn btn-primary">Hair Products</a>
+    <a href="/Home/BookAppointment" class="btn btn-primary">Book an Appointment</a> 
+    <a href="/Home/MyAppointments" class="btn btn-primary">My Appointments</a>
+
+    </div> 
+    
+
+
+
+  
+<div class="slider">
+    <div class="slides">
+        <!-- Radio buttons for navigation -->
+        <input type="radio" name="radio-btn" id="radio1" checked>
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+
+        <!-- Slide images -->
+        <div class="slide first"> 
+            <img src="images/Barbershop1.jpg" alt="Slide 1"> 
+            <a href="/Home/Haircuts" class="btn btn-primary">Haircuts</a>
+        </div>
+        <div class="slide">
+            <img src="images/Hair3.jpg" alt="Slide 2">
+        </div>
+        <div class="slide">
+            <img src="images/tattoo.jpg" alt="Slide 3">
+        </div>
+
+        <!-- Automatic navigation -->
+        <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+        </div>
+    </div>
+
+    <!-- Manual navigation -->
+    <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
